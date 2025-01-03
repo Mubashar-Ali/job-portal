@@ -10,7 +10,7 @@ const Navbar = () => {
     };
 
     return (
-        <header className="bg-white shadow-md absolute w-full top-0 left-0">
+        <header className="bg-white shadow-md fixed w-full top-0 z-50 left-0">
             <div className="container mx-auto px-4 md:px-8 flex justify-between items-center py-4">
                 {/* Logo */}
                 <div className="text-primary text-2xl font-bold">ApplyRemote</div>
@@ -19,18 +19,26 @@ const Navbar = () => {
                 <nav className="hidden md:flex space-x-8 text-grayBlue font-medium">
                     <Link href="/" className="hover:text-primary">Home</Link>
                     <Link href="/remote" className="hover:text-primary">Remote Jobs</Link>
-                    <Link href="#companies" className="hover:text-primary">Companies</Link>
-                    <Link href="#login" className="hover:text-primary">Login</Link>
+                    <Link href="/companies" className="hover:text-primary">Companies</Link>
                 </nav>
 
                 {/* Desktop Buttons */}
                 <div className="hidden md:flex space-x-4">
-                    <button className="text-primary border border-primary px-4 py-2 rounded-md hover:bg-primary hover:text-white">
-                        Sign Up
-                    </button>
-                    <button className="bg-primary text-white px-4 py-2 rounded-md hover:bg-darkBlue">
-                        Post Job
-                    </button>
+                    <Link href="/signup">
+                        <button className="text-primary border border-primary px-4 py-2 rounded-md hover:bg-primary hover:text-white">
+                            Sign Up
+                        </button>
+                    </Link>
+                    <Link href="/login">
+                        <button className="text-primary border border-primary px-4 py-2 rounded-md hover:bg-primary hover:text-white">
+                            Login
+                        </button>
+                    </Link>
+                    <Link href="/postjob">
+                        <button className="bg-primary text-white px-4 py-2 rounded-md hover:bg-darkBlue">
+                            Post Job
+                        </button>
+                    </Link>
                 </div>
 
                 {/* Mobile Menu Toggle */}

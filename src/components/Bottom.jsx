@@ -60,7 +60,7 @@ const Bottom = () => {
                             (category) => (
                                 <div
                                     key={category}
-                                    className="bg-lightGray p-6 text-center transition-all duration-300 rounded-lg shadow-sm hover:shadow-md hover:scale-105 hover:bg-gray-200"
+                                    className="bg-lightGray p-6 text-center transition-all duration-300 hover:bg-primary rounded-lg shadow-sm hover:shadow-md hover:scale-105"
                                 >
                                     <img
                                         src={`/icons/${category.toLowerCase()}.png`}
